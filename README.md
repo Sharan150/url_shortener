@@ -72,3 +72,4 @@ Once your backend is running, copy its URL and click this button to deploy the N
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSharan150%2Furl_shortener&root-directory=frontend)
 
 *Note: Vercel will ask you for a `BACKEND_URL` environment variable. Paste the URL that Render gave you in the previous step!*
+404

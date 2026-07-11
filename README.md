@@ -1,6 +1,8 @@
 # Premium URL Shortener
 
-A high-performance, full-stack URL shortening service built with modern architecture. It features a robust Spring Boot backend designed for high concurrency, and a stunning, responsive Next.js frontend.
+🚀 **Live Demo:** [https://url-shortener-ivory-two.vercel.app](https://url-shortener-ivory-two.vercel.app/)
+
+A high-performance, enterprise-grade URL shortener built with Spring Boot, Next.js, PostgreSQL, and Redis. a robust Spring Boot backend designed for high concurrency, and a stunning, responsive Next.js frontend.
 
 ## 🚀 Tech Stack
 

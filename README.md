@@ -55,10 +55,20 @@ npm run dev
 ```
 *The UI will run on `http://localhost:3000`.*
 
-## ☁️ Deployment
+## ☁️ One-Click Deployment
 
-This project is configured for a 100% free cloud stack:
-* **Frontend**: Deploy to **Vercel**. Set the `BACKEND_URL` environment variable.
-* **Backend**: Deploy to **Render** or **Koyeb**. The root `Dockerfile` will be automatically detected.
-* **Database**: Use **Supabase** or **Neon**. Set the `SPRING_DATASOURCE_URL`, `SPRING_DATASOURCE_USERNAME`, and `SPRING_DATASOURCE_PASSWORD` variables.
-* **Cache**: Use **Upstash**. Set the `REDIS_HOST` and `REDIS_PASSWORD` variables.
+Because your code is already on GitHub, you can deploy the frontend and backend instantly by clicking the buttons below!
+
+### 1. Deploy the Backend
+Click this button to deploy the Spring Boot API to Render. It will automatically ask you for your database passwords.
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Sharan150/url_shortener)
+
+*Note: You will need to enter your `SPRING_DATASOURCE_URL` (the `jdbc:postgresql://db.aqjukgt...` URL you got from Supabase), your Supabase password, and your Upstash Redis credentials.*
+
+### 2. Deploy the Frontend
+Once your backend is running, copy its URL and click this button to deploy the Next.js UI to Vercel. 
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSharan150%2Furl_shortener&root-directory=frontend)
+
+*Note: Vercel will ask you for a `BACKEND_URL` environment variable. Paste the URL that Render gave you in the previous step!*

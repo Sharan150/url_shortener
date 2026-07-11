@@ -14,5 +14,7 @@ services:
         sync: false
       - key: REDIS_HOST
         sync: false
+      - key: REDIS_PORT
+        sync: false
       - key: REDIS_PASSWORD
         sync: false

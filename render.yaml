@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: premium-url-shortener-backend
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: ohio
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        sync: false
+      - key: SPRING_DATASOURCE_USERNAME
+        sync: false
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
+      - key: REDIS_HOST
+        sync: false
+      - key: REDIS_PASSWORD
+        sync: false

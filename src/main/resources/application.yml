@@ -28,11 +28,7 @@ spring:
 
   data:
     redis:
-      host: ${REDIS_HOST:localhost}
-      port: ${REDIS_PORT:6379}
-      password: ${REDIS_PASSWORD:redispassword}
-      ssl:
-        enabled: true
+      url: rediss://default:${REDIS_PASSWORD:redispassword}@${REDIS_HOST:localhost}:${REDIS_PORT:6379}
       lettuce:
         pool:
           max-active: 100

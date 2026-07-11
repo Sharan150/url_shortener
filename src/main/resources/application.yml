@@ -26,15 +26,9 @@ spring:
         jdbc:
           batch_size: 50
 
-  data:
-    redis:
-      url: rediss://default:${REDIS_PASSWORD:redispassword}@${REDIS_HOST:localhost}:${REDIS_PORT:6379}
-      lettuce:
-        pool:
-          max-active: 100
-          max-idle: 50
-          min-idle: 10
-      timeout: 200ms
+redis:
+  host: ${REDIS_HOST:localhost}
+  password: ${REDIS_PASSWORD:redispassword}
 
 management:
   endpoints:
